@@ -1,9 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: "export",
-      basePath: '/web_portfolio',
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  basePath: '/web_portfolio',
+  images: {
+    unoptimized: true,   // ✅ ເພີ່ມແຖວນີ້
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
