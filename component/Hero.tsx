@@ -47,7 +47,7 @@ function Hero() {
                             whileTap={{ scale: 0.98 }}
                             className="border border-white/30 hover:bg-white/5 px-8 py-4 rounded-2xl font-medium text-lg transition-all duration-300"
                         >
-                            Watch Video
+                            Watch video
                         </motion.button>
                     </div>
                 </motion.div>
