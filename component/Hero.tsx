@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { CiCloud, CiCloudDrizzle, CiCloudMoon, CiCloudOn, CiCloudSun } from "react-icons/ci";
+import { IoIosPlanet } from "react-icons/io";
 
 function Hero() {
     return (
@@ -66,15 +68,30 @@ function Hero() {
                         className="relative"
                     >
                         <div className="absolute -inset-8 bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-3xl rounded-[4rem]"></div>
+                        <div className="relative w-fit mx-auto">
+                            <Image
+                                src="/assets/images/Screenshot_2026-07-04_001234-removebg-preview.png"
+                                alt="Futuristic city"
+                                width={420}
+                                height={520}
+                                priority
+                                className="rounded-3xl object-contain drop-shadow-6xl"
+                            />
 
-                        <Image
-                            src="/assets/images/Screenshot_2026-07-04_001234-removebg-preview.png"
-                            alt="Futuristic city"
-                            width={420}
-                            height={520}
-                            priority
-                            className="relative z-10 drop-shadow-2xl shadow-2xl rounded-3xl object-contain"
-                        />
+                            {/* Top Left */}
+                            <IoIosPlanet className="absolute top-4 left-4 text-4xl text-white animate-ping" />
+
+                            {/* Top Right */}
+                            <IoIosPlanet className="absolute top-4 right-4 text-4xl text-white animate-ping" />
+
+                            {/* Bottom Left */}
+                            <IoIosPlanet className="absolute bottom-4 left-4 text-4xl text-white animate-ping" />
+
+                            {/* Bottom Right */}
+                            <IoIosPlanet className="absolute bottom-4 right-4 text-4xl text-white animate-ping" />
+
+                            <IoIosPlanet className="absolute cursor-pointer hover:[animation-play-state:paused] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl text-red-400 animate-spin" />
+                        </div>
 
                         <div className="absolute -top-6 -right-6 w-32 h-32 border border-white/10 rounded-full animate-[spin_25s_linear_infinite]"></div>
                         <div className="absolute -bottom-8 -left-8 w-40 h-40 border border-white/10 rounded-full animate-[spin_35s_linear_infinite_reverse]"></div>
