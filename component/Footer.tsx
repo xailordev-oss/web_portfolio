@@ -41,6 +41,7 @@ function Footer() {
 
                 <div className="text-center mt-16 text-xs text-gray-500 tracking-widest">
                     CRAFTED WITH PASSION FOR THE FUTURE
+                    <p>My Phone number2096261945</p>
                 </div>
             </div>
         </footer>
